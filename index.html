@@ -7,15 +7,32 @@
     <title>Score Keeper</title>
   </head>
   <body>
+    <!-- score display -->
     <h1>
       <span id="p1">0</span> <i class="fa-solid fa-gamepad"></i>
       <span id="p2">0</span>
     </h1>
+
+    <!-- select option for choosing winning score -->
+    <select name="" id="playto">
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+    </select>
+    <!-- button for adding points to each player -->
     <button id="p1Btn">(Player 1) +1</button>
     <button id="p2Btn">(Player 2) +1</button>
+    <!-- reset scores button -->
     <button id="reset">Reset</button>
 
     <script src="app.js"></script>
+    <!-- script to use gamepad icons -->
     <script
       src="https://kit.fontawesome.com/01dfa6c8ff.js"
       crossorigin="anonymous"
