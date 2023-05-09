@@ -1,4 +1,4 @@
-/* media query for mobile page */
+/* media query for flexible page */
 @media (max-width: 1100px) {
   .flex {
     display: block;
