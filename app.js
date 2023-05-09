@@ -18,8 +18,8 @@ p1Btn.addEventListener("click", function () {
     p1Score++;
     if (p1Score === winningScore) {
       isGameOver = true;
-      p1.textContent = `WINNER ${p1Score}`;
-      p2.textContent = `${p2Score} LOSER`;
+      p1.innerHTML = `<span class="flex">WINNER</span> ${p1Score}`;
+      p2.innerHTML = `${p2Score} <span class="flex">LOSER</span>`;
       p1.classList.add("has-text-success");
       p2.classList.add("has-text-danger");
       p1Btn.disabled = true;
@@ -36,8 +36,8 @@ p2Btn.addEventListener("click", function () {
     p2Score++;
     if (p2Score === winningScore) {
       isGameOver = true;
-      p1.textContent = `LOSER ${p1Score}`;
-      p2.textContent = `${p2Score} WINNER`;
+      p1.textContent = `<span class="flex">LOSER</span> ${p1Score}`;
+      p2.textContent = `${p2Score} <span class="flex">WINNER</span>`;
       p2.classList.add("has-text-success");
       p1.classList.add("has-text-danger");
       p1Btn.disabled = true;
