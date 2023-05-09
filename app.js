@@ -9,7 +9,7 @@ const scoreSelector = document.querySelector("#playto");
 // initial values
 let p1Score = 0;
 let p2Score = 0;
-let winningScore = 5;
+let winningScore = 3;
 let isGameOver = false;
 
 // event activated when you click player 1 button
@@ -18,8 +18,15 @@ p1Btn.addEventListener("click", function () {
     p1Score++;
     if (p1Score === winningScore) {
       isGameOver = true;
+      p1.textContent = `WINNER ${p1Score}`;
+      p2.textContent = `${p2Score} LOSER`;
+      p1.classList.add("has-text-success");
+      p2.classList.add("has-text-danger");
+      p1Btn.disabled = true;
+      p2Btn.disabled = true;
+    } else {
+      p1.textContent = p1Score;
     }
-    p1.textContent = p1Score;
   }
 });
 
@@ -29,8 +36,15 @@ p2Btn.addEventListener("click", function () {
     p2Score++;
     if (p2Score === winningScore) {
       isGameOver = true;
+      p1.textContent = `LOSER ${p1Score}`;
+      p2.textContent = `${p2Score} WINNER`;
+      p2.classList.add("has-text-success");
+      p1.classList.add("has-text-danger");
+      p1Btn.disabled = true;
+      p2Btn.disabled = true;
+    } else {
+      p2.textContent = p2Score;
     }
-    p2.textContent = p2Score;
   }
 });
 
@@ -50,4 +64,8 @@ function reset() {
   p2Score = 0;
   p1.textContent = p1Score;
   p2.textContent = p2Score;
+  p1.classList.remove("has-text-success", "has-text-danger");
+  p2.classList.remove("has-text-success", "has-text-danger");
+  p1Btn.disabled = false;
+  p2Btn.disabled = false;
 }
