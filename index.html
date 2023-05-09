@@ -5,8 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Score Keeper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
   </head>
   <body>
-    <h1>0 to 0</h1>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-three-fifths is-offset-one-fifth">
+            <!-- make a card -->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img
+                    src="https://images.unsplash.com/photo-1632765743329-3b257fe779a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <header class="card-header">
+                <p class="card-header-title">Video Game Score Keeper</p>
+                <!-- reset scores button -->
+                <p class="control">
+                  <button
+                    id="reset"
+                    class="is-primary button is-danger is-light is-normal m-1"
+                  >
+                    Reset
+                  </button>
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <!-- score display -->
+                  <h1 class="title is-1 has-text-centered">
+                    <span id="p1">0</span> <i class="fa-solid fa-gamepad"></i>
+                    <span id="p2">0</span>
+                  </h1>
+                  <p class="subtitle">
+                    To keep score, Use the buttons below. <br />
+                  </p>
+
+                  <label for="playto" class="label is-large is-inline"
+                    >Playing To</label
+                  >
+                  <div class="select is-rounded mx-1">
+                    <!-- select option for choosing winning score -->
+                    <select name="" id="playto">
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- button for adding points to each player -->
+            <div class="buttons is-centered mt-5">
+              <p class="control">
+                <button
+                  id="p1Btn"
+                  class="is-primary button is-rounded is-medium"
+                >
+                  (Player 1) +1
+                </button>
+              </p>
+              <p class="control">
+                <button id="p2Btn" class="is-info button is-rounded is-medium">
+                  (Player 2) +1
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+    <!-- script to use gamepad icons -->
+    <script
+      src="https://kit.fontawesome.com/01dfa6c8ff.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
