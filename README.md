@@ -2,6 +2,7 @@
 
 ## :rabbit: Game Score Keeper Page (工事中)
 This is a Game Score Keeper Web page.
+Using open source css framwork [Bulma](https://bulma.io/) for designs.
 
 ## :rabbit: Link
 You can check the page from below link. <br>
