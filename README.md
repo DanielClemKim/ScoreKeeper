@@ -10,6 +10,8 @@ https://danielclemkim.github.io/ScoreKeeper/
 
 ## :rabbit: Feature
 ### Recent updates
+
+✨ Add Github link on the top.
 ## :bug: Bugfix
 
 ## Example Page ⬇️
