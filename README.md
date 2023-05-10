@@ -1,6 +1,6 @@
 # ScoreKeeper
 
-## :rabbit: Game Score Keeper Page (工事中)
+## :rabbit: Game Score Keeper Page
 This is a Game Score Keeper Web page.
 Using open source css framwork [Bulma](https://bulma.io/) for designs.
 
@@ -9,10 +9,14 @@ You can check the page from below link. <br>
 https://danielclemkim.github.io/ScoreKeeper/
 
 ## :rabbit: Feature
+
+1. Select the winning score from the selector (default is 3).
+2. When the game ends, you can check who's win.
 ### Recent updates
 
 ✨ Add Github link on the top.
 ## :bug: Bugfix
+Now it's not gonna be zoomed when you double tap buttons in the mobile page.
 
 ## Example Page ⬇️
 - Main page
