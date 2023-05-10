@@ -9,7 +9,7 @@ You can check the page from below link. <br>
 https://danielclemkim.github.io/ScoreKeeper/
 
 ## :rabbit: Feature
-
+### Recent updates
 ## :bug: Bugfix
 
 ## Example Page ⬇️
